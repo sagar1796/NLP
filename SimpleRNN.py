@@ -148,7 +148,7 @@ X_train.shape
 
 
 model=Sequential()
-model.add(SimpleRNN(32,input_shape=(50,1),return_sequences=False))
+model.add(SimpleRNN(32,input_shape=(50,1),return_sequences=False)) #maxlen is 50 and 1 as output , return_sequence=False because it is a case of many to one
 model.add(Dense(1,activation='sigmoid'))
 model.summary()
 
